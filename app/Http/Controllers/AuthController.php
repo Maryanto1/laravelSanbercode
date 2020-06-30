@@ -11,8 +11,9 @@ class AuthController extends Controller
         return view('form');
     }
 
-    public function welcome()
-    {
-        return view('selamatDatang');
+    public function welcome(Request $request)
+    {   
+        // dd($request->all());
+        return view('selamatDatang',['data' => $request]);
     }
 }

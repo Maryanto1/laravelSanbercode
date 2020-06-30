@@ -6,7 +6,7 @@
     <title>Sanbercode</title>
 </head>
 <body>
-    <h1>SELAMAT DATANG!</h1>
+    <h1>SELAMAT DATANG! <?= $data->first_name ." ". $data->last_name ?></h1>
     <h4>Terimakasih telah bergabung di Sanberbook. Social Media kita bersama!</h4>
 </body>
 </html>

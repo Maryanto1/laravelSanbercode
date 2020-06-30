@@ -8,15 +8,16 @@
 <body>
     <h1>Buat Account Baru!</h1>
     <h3>Sign Up Form</h3>
-<form action="{{url('/welcome')}}">
+            <form action="{{url('/welcome')}}" method="POST">
+                @csrf
                 <label for="first-name">First name:</label>
                 <br><br>
-                <input id="first-name"type="text" required>
+                <input name="first_name"type="text" required>
 
                 <br><br>
                 <label for="Last-name">Last name:</label>
                 <br><br>
-                <input id="Last-name"type="text" required> 
+                <input name="last_name"type="text" required> 
                 <br>
                 <br>
                 <label >Gender:</label>
@@ -59,7 +60,7 @@
                     <br>
                     <br>
                     <button type="submit">Sign Up</button>
-    </form>
+             </form>
 
 </body>
 </html>
